@@ -2,12 +2,11 @@ import "dotenv/config";
 import yargs from "yargs/yargs";
 import { hideBin } from "yargs/helpers";
 import http from "http";
-import url from "node:url";
 import fs from "fs/promises";
 
-const config = JSON.parse(await fs.readFile("./config.json"), {
-  encoding: "utf8",
-});
+// const config = JSON.parse(await fs.readFile("./config.json"), {
+//   encoding: "utf8",
+// });
 
 yargs(hideBin(process.argv))
   .command(
