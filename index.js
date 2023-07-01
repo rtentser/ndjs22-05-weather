@@ -28,8 +28,6 @@ yargs(hideBin(process.argv))
       // params.append("units", config.units);
       // params.append("language", config.language);
 
-      // console.log(baseURL + "?" + params.toString());
-
       http.get(baseURL + "?" + params.toString(), (res) => {
         let data = [];
         res
